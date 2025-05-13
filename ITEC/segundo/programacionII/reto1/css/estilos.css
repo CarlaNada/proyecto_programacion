@@ -1,0 +1,133 @@
+body {
+    background-color: #FFF0BD; /*fondo*/
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /*tipo de letra*/
+    color: #333; /*color de texto: gris oscuro*/
+    line-height: 1.6; /*interlineado*/
+    padding: 20px;
+}
+
+img{
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin: 10px auto; /*espacio arriba y abajo y la centra*/
+    border: 2px solid #333;
+    border-radius: 10%;
+    box-shadow: 0px 0px 28px 1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 28px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 28px 1px rgba(0,0,0,0.75);   
+}
+
+figcaption{
+    font-style: italic;
+}
+
+.galeria {  /*el . significa que es una clase, sirven para darles estilos especificos*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap; /* para que en pantallas chicas se acomode solo */
+}
+  
+.galeria img, .galeria video {
+    width: 200px;
+    border-radius: 12px;
+    height: auto; /* mantiene proporciones */
+    border: 2px solid #333;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    object-fit: cover; /* para que se vea bien encajado si defines altura fija */
+}  
+
+figure{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /*tipo de letra*/
+    color: #333; /*color de texto: gris oscuro*/
+    line-height: 1.6; /*interlineado*/
+    padding: 20px;
+    text-align: center;
+}
+
+h1{
+    color: #C7DB9C;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+h2{
+    color: #C7DB9C; 
+    text-align: center;
+    font-size: 20px;
+    margin: 15px;
+}
+
+h3{
+    color: black;
+    text-align: center;
+    font-size: 25px;
+    margin: 15px;
+}
+
+nav{
+    font-family: 'Courier New', Courier, monospace;
+    bottom: auto;
+    text-align: left;
+    
+}
+
+header{
+    background-color: #c29273;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+footer{
+    background-color: #c29273;
+    color: white;
+    padding: 20px;
+    text-align: left;
+    border-radius: 10px;   
+}
+
+a {
+    color: #333;
+    text-decoration: none;  /* saca el subrayado */
+}
+
+ul{
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+p, h4{
+    text-align: center;
+}
+
+.activo {
+    background-color: #c9895e;
+    color: white;
+    font-weight: bold;
+    border-radius: 10%;
+    padding: 1px 1px;
+  }
+  
+.menu_nav{
+    background-color: #854820; /*#c9895e*/ 
+    color: white;
+    border-radius: 10%;
+    padding: 1px 1px;
+    text-decoration: none;  /* saca el subrayado */
+    display: inline-block;  /* mejora el diseño tipo botón */
+    transition: background-color 0.3s;    
+}
