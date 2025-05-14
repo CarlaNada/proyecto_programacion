@@ -125,12 +125,26 @@ nav li a:hover{
 }
 
 .menciones{
-  box-shadow: var(--box);
-  margin: 10px;
+  max-width: 300px;
+  flex: 1 1 300px; 
+  box-shadow: 0px 0px 30px -4px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 0px 30px -4px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 30px -4px rgba(0,0,0,0.75);
+  margin: 100px 50px 100px 50px; /*hay que ver como hacer para que el margin entre los box ea menos*/
 }
 
-.imagen_mencion {
-  height: 200px;
+.imagen_mencion{
+  width: 100%;
+  height: auto;
+  display: block;
+  
+}
+
+.imagen_content{
+  background-color: var(--white-color);
+  padding: 15px;
+  box-shadow: var(--box);
+  text-align: left;
 }
 
 /* ------------------------ Footer */
